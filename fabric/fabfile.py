@@ -100,9 +100,6 @@ def install_package():
 
 def user_mod(user_name, user_param):
   with open("user_pass","a") as pass_file:
-    #user_uid = "10112"
-    #user_name = "akadriu"
-    #user_group = "Administrators"
     #print (mypw)
     usermod= sudo("usermod -aG %s  %s" % (user_param, user_name))
     #user = sudo("useradd -u %s -g 100 -G %s  %s" % (user_uid, user_group, user_name))
